@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Define the keyframes and custom utility directly */
+@keyframes border-chaser {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-chaser {
+  background-size: 200% auto;
+  animation: border-chaser 3s linear infinite;
+}
+
+/* Futuristic background scanlines effect */
+body {
+  background-image: linear-gradient(rgba(18, 24, 38, 0) 50%, rgba(6, 182, 212, 0.04) 50%), 
+                    linear-gradient(90deg, rgba(18, 24, 38, 0) 50%, rgba(6, 182, 212, 0.04) 50%);
+  background-size: 4px 4px;
+}
